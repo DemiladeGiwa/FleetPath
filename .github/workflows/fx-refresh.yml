@@ -1,0 +1,33 @@
+name: FX snapshot refresh
+
+# Bank of Canada publishes the daily rate by 16:30 ET on business days.
+on:
+  schedule:
+    - cron: "17 22 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Refresh data/fx_rates.json
+        run: python scripts/refresh_fx_snapshot.py
+      - name: Open a pull request if the rate changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: chore/fx-refresh
+          delete-branch: true
+          add-paths: data/fx_rates.json
+          commit-message: Refresh Bank of Canada USD/CAD snapshot
+          title: Refresh Bank of Canada USD/CAD snapshot
+          body: |
+            Automated refresh of `data/fx_rates.json` from the Bank of Canada Valet API (FXUSDCAD).
+            CI runs the test suite on this PR. Every CAD-converted baseline moves with the rate.

@@ -1,0 +1,42 @@
+#AI tools/ their config directories
+.codex/
+.antigravity/
+.claude/
+
+#secrets
+.env
+.env.local
+.env.*.local
+
+#OS leftovers probably harmless anyway
+Thumbs.db
+desktop.ini
+.DS_Store
+
+#cache
+.mypy_cache/
+.ruff_cache/
+.idea/
+
+# Debug/verification artifacts generated during code review
+*.err
+baseline_scenario_*.json
+candidate_*.json
+fixed_post_*
+fixed_preflight_*
+*_payload.json
+frontend_home_after.html
+tmp/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Logs
+*.log
+
+# Frontend
+node_modules/
+dist/

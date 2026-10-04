@@ -1,0 +1,12 @@
+{
+  "usd_to_cad": {
+    "param_id": "REF_FX_USD_CAD_DAILY",
+    "value": 1.3785,
+    "unit": "CAD per USD",
+    "source_agency": "Bank of Canada, Valet API (daily average exchange rate)",
+    "source_url": "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/",
+    "rate_observation_date": "2026-08-20",
+    "snapshot_generated_at_utc": "2026-08-21T09:05:18+00:00",
+    "note": "Refreshed offline once daily by scripts/refresh_fx_snapshot.py. The running server never calls this API directly -- it reads this static file, same as every other baseline in data/. If this file's rate_observation_date is more than a few days stale, the scheduled refresh has failed and should be investigated before the figure is trusted for a report."
+  }
+}

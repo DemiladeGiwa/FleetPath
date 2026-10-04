@@ -1,0 +1,75 @@
+{
+  "CA": {
+    "code": "CA",
+    "state_name": "California",
+    "grid_id": "CAMX",
+    "subregion": "CAMX",
+    "cold_climate": false,
+    "country": "US"
+  },
+  "IN": {
+    "code": "IN",
+    "state_name": "Indiana",
+    "grid_id": "RFCW",
+    "subregion": "RFCW",
+    "cold_climate": true,
+    "country": "US"
+  },
+  "QC": {
+    "code": "QC",
+    "state_name": "Quebec",
+    "grid_id": "ECCC_QC",
+    "subregion": "ECCC_QC",
+    "cold_climate": true,
+    "country": "CA"
+  },
+  "TX": {
+    "code": "TX",
+    "state_name": "Texas",
+    "grid_id": "ERCT",
+    "subregion": "ERCT",
+    "cold_climate": false,
+    "country": "US"
+  },
+  "WA": {
+    "code": "WA",
+    "state_name": "Washington",
+    "grid_id": "NWPP",
+    "subregion": "NWPP",
+    "cold_climate": false,
+    "country": "US"
+  },
+  "NB": {
+    "code": "NB",
+    "state_name": "New Brunswick",
+    "grid_id": "NB",
+    "subregion": "NB",
+    "cold_climate": true,
+    "country": "CA",
+    "note": "DISCLOSED CHANGE: grid_id previously 'NB_ECCC_CONSUMPTION', which has no matching entry in grid_factors.json. Resolution only worked because subregion is checked first in emissions_calculator.py's lookup. Corrected grid_id to 'NB' to match the real key and remove the silent dependency on lookup order."
+  },
+  "ON": {
+    "code": "ON",
+    "state_name": "Ontario",
+    "grid_id": "ON",
+    "subregion": "ON",
+    "cold_climate": true,
+    "country": "CA"
+  },
+  "BC": {
+    "code": "BC",
+    "state_name": "British Columbia",
+    "grid_id": "BC",
+    "subregion": "BC",
+    "cold_climate": false,
+    "country": "CA"
+  },
+  "AB": {
+    "code": "AB",
+    "state_name": "Alberta",
+    "grid_id": "AB",
+    "subregion": "AB",
+    "cold_climate": true,
+    "country": "CA"
+  }
+}
