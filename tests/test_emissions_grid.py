@@ -63,7 +63,7 @@ def test_diesel_emissions_are_region_independent():
 def test_canadian_grid_factors_match_verified_eccc_annex7_values():
     # DISCLOSED CHANGE (grid-factor sourcing fix): locks in corrected
     # generation-intensity figures verified against the primary ECCC NIR
-    # Annex 7 workbook (Table A7-5 NB, A7-6 QC, A7-7 ON, A7-10 AB, A7-11 BC, all 2021
+    # Annex 13 workbook (Table A13-5 NB, A13-6 QC, A13-7 ON, A13-10 AB, A13-11 BC, all 2021
     # data / Part 3 Annex 13). Sourced with real citation, native g/kWh, and
     # shown lb/MWh conversion.
     assert get_grid_factor_lb_per_mwh("NB") == pytest.approx(613.4, abs=0.05)

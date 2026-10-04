@@ -21,9 +21,9 @@
     "co2e_lb_per_mwh": 2.8,
     "grid_factor_lb_per_mwh": 2.8,
     "co2e_g_per_kwh_native": 1.287,
-    "source_agency": "ECCC National Inventory Report 2023 (NIR 1990-2021), Annex 7, Table A7-6 (Quebec generation intensity, 2021 data)",
+    "source_agency": "ECCC National Inventory Report 2023 (NIR 1990-2021), Annex 13, Table A13-6 (Quebec generation intensity, 2021 data)",
     "conversion_note": "1.287 g/kWh -> kg/MWh -> lb/MWh via 1 kg = 2.20462 lb",
-    "note": "Replaces prior 'Legacy repository baseline' placeholder. Sourced from ECCC NIR Annex 7 Table A7-6 (Quebec), 2021 generation intensity, cross-checked against the primary XLSX data table rather than a downstream aggregator. Quebec's near-total hydro mix makes this a genuinely low but real figure, not a placeholder."
+    "note": "Replaces prior 'Legacy repository baseline' placeholder. Sourced from ECCC NIR Annex 13 Table A13-6 (Quebec), 2021 generation intensity, cross-checked against the primary XLSX data table rather than a downstream aggregator. Quebec's near-total hydro mix makes this a genuinely low but real figure, not a placeholder."
   },
   "ERCT": {
     "param_id": "GRID_FACTOR_ERCT",
@@ -47,9 +47,9 @@
     "co2e_lb_per_mwh": 613.4,
     "co2e_g_per_kwh_native": 278.233,
     "grid_factor_lb_per_mwh": 613.4,
-    "source_agency": "ECCC National Inventory Report 2023 (NIR 1990-2021), Annex 7, Table A7-5 (New Brunswick generation intensity, 2021 data)",
+    "source_agency": "ECCC National Inventory Report 2023 (NIR 1990-2021), Annex 13, Table A13-5 (New Brunswick generation intensity, 2021 data)",
     "conversion_note": "278.233 g/kWh -> kg/MWh -> lb/MWh via 1 kg = 2.20462 lb",
-    "note": "Corrects prior value of 220 g/kWh (485.0 lb/MWh), which was marked 'confirmed' but did not match any year in the primary ECCC Annex 7 Table A7-5 data when cross-checked directly against the source workbook. 278.233 g/kWh is NB's actual 2021 generation intensity, matching the same table/year/methodology used for QC's corrected entry."
+    "note": "Corrects prior value of 220 g/kWh (485.0 lb/MWh), which was marked 'confirmed' but did not match any year in the primary ECCC Annex 13 Table A13-5 data when cross-checked directly against the source workbook. 278.233 g/kWh is NB's actual 2021 generation intensity, matching the same table/year/methodology used for QC's corrected entry."
   },
   "ON": {
     "param_id": "GRID_FACTOR_ON",
@@ -57,9 +57,9 @@
     "co2e_lb_per_mwh": 87.0,
     "grid_factor_lb_per_mwh": 87.0,
     "co2e_g_per_kwh_native": 39.446,
-    "source_agency": "ECCC National Inventory Report 2023 (NIR 1990-2021), Annex 7, Table A7-7 (Ontario generation intensity, 2021 data)",
+    "source_agency": "ECCC National Inventory Report 2023 (NIR 1990-2021), Annex 13, Table A13-7 (Ontario generation intensity, 2021 data)",
     "conversion_note": "39.446 g/kWh -> kg/MWh -> lb/MWh via 1 kg = 2.20462 lb",
-    "note": "Corrects prior value of 66.0 lb/MWh, which carried only a bare 'ECCC National Inventory Report 2023' citation with no annex/table/year and did not match any year in the primary ECCC Annex 7 Table A7-7 data when cross-checked directly against the source workbook."
+    "note": "Corrects prior value of 66.0 lb/MWh, which carried only a bare 'ECCC National Inventory Report 2023' citation with no annex/table/year and did not match any year in the primary ECCC Annex 13 Table A13-7 data when cross-checked directly against the source workbook."
   },
   "BC": {
     "param_id": "GRID_FACTOR_BC",
@@ -67,9 +67,9 @@
     "co2e_lb_per_mwh": 30.9,
     "grid_factor_lb_per_mwh": 30.9,
     "co2e_g_per_kwh_native": 14,
-    "source_agency": "ECCC National Inventory Report 2023 (NIR 1990-2021), Annex 7, Table A7-11 (British Columbia generation intensity, 2021 data)",
+    "source_agency": "ECCC National Inventory Report 2023 (NIR 1990-2021), Annex 13, Table A13-11 (British Columbia generation intensity, 2021 data)",
     "conversion_note": "14 g/kWh -> kg/MWh -> lb/MWh via 1 kg = 2.20462 lb",
-    "note": "Replaces prior bare 'ECCC National Inventory Report 2023' citation (no annex/table/year/native value) with the full Annex 7 Table A7-11 citation, 2021 generation intensity, matching the same table/year/methodology used for the QC/NB/ON/AB corrections."
+    "note": "Replaces prior bare 'ECCC National Inventory Report 2023' citation (no annex/table/year/native value) with the full Annex 13 Table A13-11 citation, 2021 generation intensity, matching the same table/year/methodology used for the QC/NB/ON/AB corrections."
   },
   "AB": {
     "param_id": "GRID_FACTOR_AB",
@@ -77,9 +77,9 @@
     "co2e_lb_per_mwh": 1116.6,
     "grid_factor_lb_per_mwh": 1116.6,
     "co2e_g_per_kwh_native": 506.496,
-    "source_agency": "ECCC National Inventory Report 2023 (NIR 1990-2021), Annex 7, Table A7-10 (Alberta generation intensity, 2021 data)",
+    "source_agency": "ECCC National Inventory Report 2023 (NIR 1990-2021), Annex 13, Table A13-10 (Alberta generation intensity, 2021 data)",
     "conversion_note": "506.496 g/kWh -> kg/MWh -> lb/MWh via 1 kg = 2.20462 lb",
-    "note": "Corrects prior value of 1200.0 lb/MWh, which carried only a bare 'ECCC National Inventory Report 2023' citation with no annex/table/year and did not match any year in the primary ECCC Annex 7 Table A7-10 data when cross-checked directly against the source workbook."
+    "note": "Corrects prior value of 1200.0 lb/MWh, which carried only a bare 'ECCC National Inventory Report 2023' citation with no annex/table/year and did not match any year in the primary ECCC Annex 13 Table A13-10 data when cross-checked directly against the source workbook."
   },
   "US_AVG": {
     "param_id": "GRID_FACTOR_US_AVG",
